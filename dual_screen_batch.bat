@@ -1,7 +1,6 @@
 @echo off
+SETCONSOLE /minimize
 
-@REM switch to only 1st screen
-DisplaySwitch.exe /internal
 
 
 @REM launch CSGO
@@ -16,6 +15,10 @@ FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF NOT %%x == %EXE% (
   timeout /t 1
   goto :waitingOpen
 )
+
+@REM switch to only 1st screen
+DisplaySwitch.exe /internal
+
 
 
 SETLOCAL EnableExtensions
