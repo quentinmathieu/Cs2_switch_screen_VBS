@@ -6,7 +6,7 @@
 @REM copy the script in startup windows's programs
 set startup="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 if NOT exist %startup%\SwitchScreen.exe (
-    copy %0 %startup%\SwitchScreen.exe
+    copy %0 %startup%\%~n0%~x0
 ) 
 
 @REM mklink /d %current%  %startup%
