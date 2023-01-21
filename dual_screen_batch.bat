@@ -1,10 +1,12 @@
 @echo off
-SET FOLDER = %cd%
 
 @REM switch to only 1 screen
 DisplaySwitch.exe /internal
 
-set csgopath= D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\csgo.exe
+set csgopath=D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive
+cd %csgopath%
+dir
+pause
 
 @REM cd  D:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive
 @REM echo %cd%
@@ -20,7 +22,7 @@ FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF %%x == %EXE% (
   goto :before
 )
 
-cd %FOLDER%
+
 DisplaySwitch.exe /extend
 
 
