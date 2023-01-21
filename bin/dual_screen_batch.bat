@@ -18,7 +18,7 @@ set EXE=csgo.exe
 @REM Waiting csgo to be launched
 FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF NOT %%x == %EXE% (
   echo %EXE% waiting for csgo to launch...
-  timeout /t 3
+  timeout /t 3 >nul
   goto :waitingOpen
 )
 
@@ -32,7 +32,7 @@ SETLOCAL EnableExtensions
 @REM While csgo is running display that it's running ; THEN when you quit csgo leave the for loop
 FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF %%x == %EXE% (
   echo %EXE% is Running
-  timeout /t 3
+  timeout /t 3 >nul
   goto :before
 )
 
