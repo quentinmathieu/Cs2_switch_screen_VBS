@@ -3,11 +3,8 @@ SETCONSOLE /minimize
 
 
 
-@REM launch CSGO
-"C:\Program Files (x86)\Steam\steam.exe" steam://rungameid/730
-
-
 set EXE=csgo.exe
+
 :waitingOpen
 @REM Waiting csgo to be launched
 FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF NOT %%x == %EXE% (
@@ -34,4 +31,6 @@ FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF %%x == %EXE% (
 @REM that extends screens
 DisplaySwitch.exe /extend
 
+
+goto :waitingOpen
 
