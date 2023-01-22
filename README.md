@@ -1,7 +1,7 @@
 
 # Switch Screen for CSGO
 
-This apps will provide you a switch that allows **only your main screen** to work **during csgo session** (to save fps) and that will switch again to **extend screens mode where you close the game**.
+This app will provide you a switch that allows **only your main screen** to work **during csgo's sessions** (to save fps) and that will **extends screens where you close the game**.
 
 ## Installation
 
