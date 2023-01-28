@@ -7,6 +7,8 @@ This app will provide you a switch that allows **only your main screen** to work
 
 To install this app you just need to download the repo (or clone), then open **1_SwitchScreen.vbs**
 
+![disable script](/images/installation.png)
+
 This will copy the .vbs and the .bat to the startup program's folder, so that will work every time that you launch your game!
 
 
