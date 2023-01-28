@@ -12,7 +12,7 @@ This will copy the .exe to the startup program's folder, so that will work every
 
 ## Disable
 
-To disable it you have to go to the Taskmanager (`ctrl + alt + del` then Taskmanager)
+To disable it you have open the **Taskmanager** (`ctrl + alt + del` then Taskmanager)
 
 ![disable script](/images/disable.png)
 
@@ -23,7 +23,7 @@ In the Startup tab, `right click` on 1_SwitchScreen.vbs and 2_SwitchScreen.bat a
 
 To uninstall the app you have to **delete it from startup program's folder**
 
-To do it press *windows + R* and write *shell:startup*
+To do it press `windows + R` and write *shell:startup*
 
 Then delete **1_SwitchScreen.vbs and 2_SwitchScreen.bat**
 
