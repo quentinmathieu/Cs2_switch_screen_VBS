@@ -14,7 +14,7 @@ This will copy the .exe to the startup program's folder, so that will work every
 
 To disable it you have to go to the Taskmanager (`ctrl + alt + del` then Taskmanager)
 
-![disable script](images/disable.png)
+![disable script](/images/disable.png)
 
 In the Startup tab, `right click` on 1_SwitchScreen.vbs and 2_SwitchScreen.bat and disable them
 
