@@ -15,6 +15,7 @@ set startup="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"
 if NOT exist %startup%\2_SwitchScreen.bat (
     copy %~dp0\1_SwitchScreen.vbs %startup%\1_SwitchScreen.vbs
     copy %0 %startup%\%~n0%~x0
+    msg * "Installation complete !"
 ) 
 
 @REM mklink /d %current%  %startup%
