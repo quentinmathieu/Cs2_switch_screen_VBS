@@ -5,9 +5,13 @@ This app will provide you a switch that allows **only your main screen** to work
 
 ## Installation
 
-To install this app you just need to download the repo (or clone), then open **1_SwitchScreen.vbs**
+To install this app you just need to download the repo (or clone), then open **1_SwitchScreen.vbs**  
 
-This will copy the .exe to the startup program's folder, so that will work every time that you launch your game!
+This will copy the .vbs and the .bat to the startup program's folder, so that will work every time that you launch your game!
+
+
+
+*after installing the VBS you can delete the files from the download's folder*
 
 
 ## Disable
