@@ -21,11 +21,11 @@ if NOT exist %startup%\2_SwitchScreen.bat (
 @REM mklink /d %current%  %startup%
 
 
-set EXE=csgo.exe
+set EXE=cs2.exe
 :waitingOpen
-@REM Waiting csgo to be launched
+@REM Waiting cs2 to be launched
 FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF NOT %%x == %EXE% (
-  echo %EXE% waiting for csgo to launch...
+  echo %EXE% waiting for cs2 to launch...
   timeout /t 3 >nul
   goto :waitingOpen
 )
@@ -37,7 +37,7 @@ DisplaySwitch.exe /internal
 
 SETLOCAL EnableExtensions
 :before
-@REM While csgo is running display that it's running ; THEN when you quit csgo leave the for loop
+@REM While cs2 is running display that it's running ; THEN when you quit cs2 leave the for loop
 FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF %%x == %EXE% (
   echo %EXE% is Running
   timeout /t 3 >nul
