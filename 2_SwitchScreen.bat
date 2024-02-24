@@ -30,7 +30,7 @@ FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF NOT %%x == %EXE% (
   goto :waitingOpen
 )
 
-@REM switch to only 1st screen
+@REM switch to the 1st screen only; type "/external" instead of "/internal" if the internal monitor is not wich one you need
 DisplaySwitch.exe /internal
 
 
@@ -45,7 +45,7 @@ FOR /F %%x IN ('tasklist /NH /FI "IMAGENAME eq %EXE%"') DO IF %%x == %EXE% (
 )
 
 
-@REM that extends screens
+@REM That extends screens
 DisplaySwitch.exe /extend
 
 goto :waitingOpen
