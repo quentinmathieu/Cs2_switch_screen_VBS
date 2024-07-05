@@ -1,5 +1,5 @@
 
-# Switch Screen for CSGO
+# Switch Screen for CS2
 # For updates check https://github.com/quentinmathieu/Cs2_switch_screen_VBS
 This app will provide you a switch that allows **only your main screen** to work **during csgo's sessions** (to save fps) and that will **extends screens where you close the game**.
 
